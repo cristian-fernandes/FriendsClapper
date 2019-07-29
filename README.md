@@ -7,7 +7,7 @@ When you turn on the microphone on and read its output, even without any sound, 
 
 To make things more interesting and unique, the output signal will be ON and OFF only if the software recognizes 4 claps in a row (like in the FRIENDS opening theme).  
 
-Since the claps are recognized as peaks (higher or low ones), the best way to recognize a peak is by [Histeresys](https://en.wikipedia.org/wiki/Hysteresis "Histeresys"), utilizing a [Schmitt Trigger](https://microchipdeveloper.com/asp0107:comparators-hysteresis "Schmitt Trigger"). This way we'll recognize any peak out of the histeresys boundaries.   
+Since the claps are recognized as peaks (higher or low ones), the best way to recognize a peak is by [Histeresys](https://en.wikipedia.org/wiki/Hysteresis "Histeresys"), utilizing a [Schmitt Trigger](https://howtomechatronics.com/how-it-works/electrical-engineering/schmitt-trigger/). This way we'll recognize any peak out of the histeresys boundaries.   
 
 **Fritzing**  
 ![](sound-detection-fritzing.jpg)  
