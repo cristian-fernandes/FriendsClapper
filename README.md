@@ -2,7 +2,10 @@
 # F.R.I.E.N.D.S - Clapper
 Simple **Arduino** sketch to turn the lights on and off by clapping like in the Friends sitcom opening theme.
 
+**Sensor**  
+When you turn on the microphone and read its output read the output, even without any sound, you will see that the reading will be 2.5V (if you feed with 5V). At every noise or sound the microphone "feels", the output signal will oscillate between this 2.5V voltage. Thus it is possible to see voltage peaks that represent higher audio intensities, which may be Clapping.  
 
+Since the claps are recognized as peaks (higher or low ones), the best way to recognize a peak is by [Histeresys](https://en.wikipedia.org/wiki/Hysteresis "Histeresys"), utilizing a [Schmitt Trigger](https://microchipdeveloper.com/asp0107:comparators-hysteresis "Schmitt Trigger"). This way we'll recognize any peak out of the histeresys boundaries.   
 
 **Fritzing**  
 ![](sound-detection-fritzing.jpg)  
